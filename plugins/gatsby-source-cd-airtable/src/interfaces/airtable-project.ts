@@ -19,6 +19,8 @@ export interface AirTableProject {
     url: string
     csContributeText: string
     enContributeText: string
+    csContributionText: string
+    enContributionText: string
     csDescription: string
     enDescription: string
     lead: string[]

@@ -3,9 +3,10 @@ import { Layout, Section, SectionContent } from 'components/layout'
 import { graphql } from 'gatsby'
 import { Heading1 } from 'components/typography'
 import { Project } from 'generated/graphql-types'
-import AboutProject from './components/about'
 import * as S from './styles'
+import AboutProject from './components/about'
 import ProjectCard from './components/project-card'
+import Contribute from './components/about/contribute'
 import { NAVIGATION_KEY as PROJECT_PAGE_NAVIGATION_KEY } from 'page-components/projects'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
 import { mapVolunteers } from 'utils/map-volunteers'
@@ -30,6 +31,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ data }) => {
     description,
     slackChannelUrl,
     slackChannelName,
+    contributionText,
   } = data.project
   return (
     <Layout
@@ -69,6 +71,11 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ data }) => {
           </S.AboutSectionWrapper>
         </SectionContent>
       </Section>
+      <Section>
+        <SectionContent>
+          <Contribute contributionText={contributionText} />
+        </SectionContent>
+      </Section>
     </Layout>
   )
 }
@@ -97,6 +104,7 @@ export const query = graphql`
       githubUrl
       trelloUrl
       url
+      contributionText
     }
   }
 `

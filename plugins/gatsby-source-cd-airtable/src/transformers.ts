@@ -30,6 +30,8 @@ export const transformProjects = (
         logoUrl,
         csContributeText,
         enContributeText,
+        csContributionText,
+        enContributionText,
         csDescription,
         enDescription,
         githubUrl,
@@ -65,6 +67,7 @@ export const transformProjects = (
         slug: enSlug,
         description: enDescription,
         contributeText: enContributeText,
+        contributionText: enContributionText,
         lang: Language.English,
       }
       const csProject: Project = {
@@ -74,6 +77,7 @@ export const transformProjects = (
         slug: csSlug,
         description: csDescription,
         contributeText: csContributeText,
+        contributionText: csContributionText,
         lang: Language.Czech,
       }
 
