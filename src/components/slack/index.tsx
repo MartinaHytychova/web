@@ -1,5 +1,4 @@
 import * as React from 'react'
-import ButtonAsLink from 'components/links/button-as-link'
 import { SlackIcon } from 'components/icons'
 
 import * as S from './styles'
@@ -11,11 +10,11 @@ interface Props {
 
 const Slack: React.FC<Props> = ({ slackLink, slackText }) => {
   return (
-    <ButtonAsLink inverted to={slackLink}>
+    <S.Link inverted to={slackLink}>
       <>
         <SlackIcon /> <S.ButtonLabel>{slackText}</S.ButtonLabel>
       </>
-    </ButtonAsLink>
+    </S.Link>
   )
 }
 

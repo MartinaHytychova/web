@@ -14,19 +14,21 @@ const Contribute: React.FC<Props> = ({ contributeText }) => {
   return (
     <S.Wrapper>
       <Heading2>{t('pages.project.about.contribute.title')}</Heading2>
-      <S.Description>{contributeText}</S.Description>
-      <Body>
+      <S.Description>{contributeText}</S.Description>{' '}
+      <S.Text>
         <Slack
           slackLink={'https://join.cesko.digital/'}
           slackText={t('pages.project.about.contribute.buttonText')}
         />
-        <S.Note>
-          {t('pages.project.about.contribute.note')}
-          <S.LinkHome size={ButtonSize.Small} to="/">
-            {t('pages.project.about.contribute.noteLink')}?
-          </S.LinkHome>
-        </S.Note>
-      </Body>
+        <Body>
+          <S.Note>
+            {t('pages.project.about.contribute.note')}
+            <S.LinkHome size={ButtonSize.Small} to="/">
+              {t('pages.project.about.contribute.noteLink')}?
+            </S.LinkHome>
+          </S.Note>
+        </Body>
+      </S.Text>
     </S.Wrapper>
   )
 }

@@ -73,7 +73,9 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ data }) => {
       </Section>
       <Section>
         <SectionContent>
-          <Contribute contributeText={contributeText} />
+          <S.ContributeWrapper>
+            <Contribute contributeText={contributeText} />
+          </S.ContributeWrapper>
         </SectionContent>
       </Section>
     </Layout>

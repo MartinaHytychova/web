@@ -26,3 +26,12 @@ export const ProjectCardWrapper = styled.div`
     margin-bottom: 48px;
   }
 `
+
+export const ContributeWrapper = styled.div`
+  margin: 30px 0;
+  display: flex;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    margin: 100px 0;
+  }
+`
