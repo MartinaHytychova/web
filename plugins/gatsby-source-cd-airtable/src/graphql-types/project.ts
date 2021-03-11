@@ -28,7 +28,6 @@ export const Project = `
     highlighted: Boolean!
     tags: [Tag!]!
     contributeText: String!
-    contributionText: String!
     progress: Int!
     description: String!
     trelloUrl: String

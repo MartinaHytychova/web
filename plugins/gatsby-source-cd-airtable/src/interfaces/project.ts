@@ -35,7 +35,6 @@ export interface Project extends SourceNode {
   description: string
   progress: number
   contributeText: string
-  contributionText: string
   trelloUrl?: string
   githubUrl?: string
   url: string

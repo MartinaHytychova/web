@@ -4,7 +4,6 @@ export const getMockProjects: () => Project[] = () => {
   const base = {
     tags: ['1'],
     contributeText: 'Lorem ipsum',
-    contributionText: 'Lorem ipsum',
     description: 'Lorem ipsum',
     trelloUrl: 'https://cesko.digital',
     githubUrl: 'https://cesko.digital',

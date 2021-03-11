@@ -31,7 +31,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ data }) => {
     description,
     slackChannelUrl,
     slackChannelName,
-    contributionText,
+    contributeText,
   } = data.project
   return (
     <Layout
@@ -73,7 +73,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ data }) => {
       </Section>
       <Section>
         <SectionContent>
-          <Contribute contributionText={contributionText} />
+          <Contribute contributeText={contributeText} />
         </SectionContent>
       </Section>
     </Layout>
@@ -104,7 +104,7 @@ export const query = graphql`
       githubUrl
       trelloUrl
       url
-      contributionText
+      contributeText
     }
   }
 `

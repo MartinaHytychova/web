@@ -22,8 +22,6 @@ describe('transformers', () => {
     const enDescription = 'Description'
     const csContributeText = 'Zapoj se'
     const enContributeText = 'Contribute'
-    const csContributionText = 'Lorem ipsum'
-    const enContributionText = 'Lorem ipsum'
     const trelloUrl = 'trello'
     const githubUrl = 'github'
     const url = 'url'
@@ -52,8 +50,6 @@ describe('transformers', () => {
             enDescription,
             csContributeText,
             enContributeText,
-            csContributionText,
-            enContributionText,
             trelloUrl,
             githubUrl,
             progress,
@@ -74,7 +70,6 @@ describe('transformers', () => {
         slug: enSlug,
         description: enDescription,
         contributeText: enContributeText,
-        contributionText: enContributionText,
         trelloUrl,
         slackChannelName,
         slackChannelUrl,
@@ -96,7 +91,6 @@ describe('transformers', () => {
         slug: csSlug,
         description: csDescription,
         contributeText: csContributeText,
-        contributionText: csContributionText,
         trelloUrl,
         slackChannelName,
         slackChannelUrl,
@@ -129,8 +123,6 @@ describe('transformers', () => {
             enDescription,
             csContributeText,
             enContributeText,
-            csContributionText,
-            enContributionText,
             trelloUrl,
             githubUrl,
             progress,
@@ -151,7 +143,6 @@ describe('transformers', () => {
         slug: enSlug,
         description: enDescription,
         contributeText: enContributeText,
-        contributionText: enContributionText,
         trelloUrl,
         slackChannelName,
         slackChannelUrl,
@@ -173,7 +164,6 @@ describe('transformers', () => {
         slug: csSlug,
         description: csDescription,
         contributeText: csContributeText,
-        contributionText: csContributionText,
         trelloUrl,
         slackChannelName,
         slackChannelUrl,

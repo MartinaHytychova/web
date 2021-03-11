@@ -6,15 +6,15 @@ import Slack from 'components/slack'
 import { ButtonSize } from 'components/buttons'
 
 interface Props {
-  contributionText: string
+  contributeText: string
 }
 
-const Contribute: React.FC<Props> = ({ contributionText }) => {
+const Contribute: React.FC<Props> = ({ contributeText }) => {
   const { t } = useTranslation()
   return (
     <S.Wrapper>
       <Heading2>{t('pages.project.about.contribute.title')}</Heading2>
-      <S.Description>{contributionText}</S.Description>
+      <S.Description>{contributeText}</S.Description>
       <Body>
         <Slack
           slackLink={'https://join.cesko.digital/'}
@@ -23,7 +23,7 @@ const Contribute: React.FC<Props> = ({ contributionText }) => {
         <S.Note>
           {t('pages.project.about.contribute.note')}
           <S.LinkHome size={ButtonSize.Small} to="/">
-            {t('pages.project.about.contribute.note')}?
+            {t('pages.project.about.contribute.noteLink')}?
           </S.LinkHome>
         </S.Note>
       </Body>

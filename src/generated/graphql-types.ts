@@ -1600,7 +1600,6 @@ export type Project = Node & {
   highlighted: Scalars['Boolean']
   tags: Array<Tag>
   contributeText: Scalars['String']
-  contributionText: Scalars['String']
   progress: Scalars['Int']
   description: Scalars['String']
   trelloUrl?: Maybe<Scalars['String']>
